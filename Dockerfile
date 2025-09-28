@@ -1,8 +1,11 @@
 # Use official n8n image
-FROM n8nio/n8n
+FROM n8nio/n8n:latest
 
-# Expose n8n's port
+# Expose the port
 EXPOSE 5678
 
-# Start n8n when container runs
-CMD ["n8n"]
+# Set timezone (optional)
+ENV GENERIC_TIMEZONE=Asia/Kolkata
+
+# Start n8n
+CMD ["n8n", "start"]
