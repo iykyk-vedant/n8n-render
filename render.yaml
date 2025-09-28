@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    autoDeploy: false
+    envVars:
+      - key: N8N_PROTOCOL
+        value: https
+      - key: N8N_PORT
+        value: 5678
+      - key: NODE_ENV
+        value: production
+      - key: N8N_ENCRYPTION_KEY
+        generateValue: true
