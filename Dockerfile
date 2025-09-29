@@ -7,4 +7,4 @@ EXPOSE 5678
 ENV GENERIC_TIMEZONE=Asia/Kolkata
 
 # Start n8n
-CMD ["n8n"]
+CMD ["n8n", "start"]
