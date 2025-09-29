@@ -25,6 +25,7 @@ Render will automatically configure these environment variables from [render.yam
 - `N8N_PORT`: Set to `5678`
 - `NODE_ENV`: Set to `production`
 - `N8N_ENCRYPTION_KEY`: Automatically generated secure key
+- `N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS`: Set to `true` to enforce proper file permissions
 
 Additional environment variables can be added in the Render dashboard:
 
