@@ -14,3 +14,5 @@ services:
         value: production
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
+      - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
+        value: "true"
